@@ -10,7 +10,7 @@ import org.springframework.cache.annotation.EnableCaching;
 * @author rex
 * @date 210314
 */
-@EnableCaching
+//@EnableCaching
 @SpringBootApplication(exclude = {DruidDataSourceAutoConfigure.class})
 public class Application {
 	public static void main(String[] args) {

@@ -2,8 +2,11 @@ package com.roncoo;
 
 public class Test {
 
-//    public static long GuidToInt64() {
-//        byte[] bytes = Guid.NewGuid().ToByteArray();
-//        return BitConverter.ToInt64(bytes, 0);
-//    }
+    public static void main(String[] args) {
+        System.out.println("main method");
+    }
+
+    public static void main(String args) {
+        System.out.println("Overloaded main method");
+    }
 }

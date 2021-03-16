@@ -36,4 +36,19 @@ public class UserController {
         return userService.querySecondAll().toString();
     }
 
+
+    @RequestMapping("/deleteById")
+    public int deleteById(int id){
+        return userService.deleteById(id);
+    }
+
+    @RequestMapping("/insertUser")
+    public int insertUser(String name, String pass){
+        User user = new User();
+        user.setName(name);
+        user.setPass(pass);
+        userService.insertUser(user);
+        return user.getId();
+    }
+
 }

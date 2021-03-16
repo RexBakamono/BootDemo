@@ -13,4 +13,10 @@ public interface UserMapper {
 
     @DS("db2")
     List<User> querySecondAll();
+
+    @DS("db1")
+    int deleteById(int id);
+
+    @DS("db1")
+    int insertUser(User user);
 }

@@ -15,7 +15,6 @@ public class UserServiceImpl implements UserService {
     private UserMapper userMapper;
 
     @Override
-//    @Cacheable(value = "user",key = "id",unless = "#result==null")
     public List<User> queryFirstAll() {
         return userMapper.queryFirstAll();
     }
@@ -24,5 +23,16 @@ public class UserServiceImpl implements UserService {
     public List<User> querySecondAll() {
         return userMapper.querySecondAll();
     }
+
+    @Override
+    public int deleteById(int id) {
+        return userMapper.deleteById(id);
+    }
+
+    @Override
+    public int insertUser(User user) {
+        return userMapper.insertUser(user);
+    }
+
 
 }
